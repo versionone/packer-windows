@@ -253,6 +253,12 @@
                     <Order>100</Order>
                     <RequiresUserInput>true</RequiresUserInput>
                 </SynchronousCommand>
+                  <SynchronousCommand wcm:action="add">
+                    <CommandLine>DISM.exe /online /enable-feature /featurename:NetFx3</CommandLine>
+                    <Description>Install NetFx3</Description>
+                    <Order>101</Order>
+                    <RequiresUserInput>true</RequiresUserInput>
+                </SynchronousCommand>
                 <!-- END WITH WINDOWS UPDATES -->
             </FirstLogonCommands>
             <OOBE>
